@@ -11385,8 +11385,9 @@ footer.footer {
     /* -webkit-transform: rotate(0.000001deg); */
     /* -webkit-border-radius: 100%; */
     -moz-border-radius: 100%;
-    margin: auto;
     margin-top: 80px;
+    float: right;
+    
 }
 
 video#header-loop-video {
