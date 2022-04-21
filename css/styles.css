@@ -11702,13 +11702,20 @@ video#header-loop-video {
   i.fa.fa-instagram {
     background: white;
     color: black;
-    padding: 10px;
+   padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    padding-right: 13px;
     border-radius: 50%;
   }
   i.fa.fa-facebook {
     background: white;
     color: black;
-    padding: 10px;
+       padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 15px;
+
     border-radius: 50%;
   }
   i.fa.fa-youtube-play {
@@ -11726,13 +11733,19 @@ video#header-loop-video {
   i.fa.fa-dribbble {
     background: white;
     color: black;
-    padding: 10px;
+        padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 13px;
     border-radius: 50%;
   }
   i.fa.fa-linkedin {
     background: white;
     color: black;
-    padding: 10px;
+   padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    padding-right: 13px;
     border-radius: 50%;
   }
 .text-banner-head {
