@@ -11296,8 +11296,8 @@ footer.footer {
   }
   .d-flex {
     display: flex !important;
-    justify-content: space-around;
-    padding-left: 31px;
+    
+    padding-left: 13px;
   }
   .my-auto {
     margin-top: 0px !important;
