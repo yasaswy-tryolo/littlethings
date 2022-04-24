@@ -11451,9 +11451,10 @@ video#header-loop-video {
  
 
 .main-round {
-      margin-left: 58px;
+      margin-left: 45px;
     margin-right: 19px;
     display: flex;
+        align-items: center;
     cursor: pointer;
 }
 
@@ -11481,7 +11482,7 @@ video#header-loop-video {
 }
   .our-reel {
     
-    padding-left: 2px;
+    padding-left: 20px;
     font-size: 19px;
     font-weight: 700;
     color: #627193;
