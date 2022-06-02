@@ -12776,6 +12776,9 @@ a.buttonbanner {
   display: none;
 }
 
+  .cursor-dot {
+  display: none;
+  }
 }
 
 
