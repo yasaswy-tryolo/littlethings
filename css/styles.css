@@ -12781,7 +12781,6 @@ section.showcase.image-desk {
 }
 
 @media only screen and (min-width: 740px) {
-
 section.showcase.image-mob {
     display: none;
 }
