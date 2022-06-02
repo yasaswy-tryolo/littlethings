@@ -111,6 +111,60 @@
       </section>
 
 
+
+<div class="cursor-dot"></div>
+
+
+<script>
+
+const bob = document.getElementsByClassName('cursor-dot')[0];
+
+let mouseX = 0;
+let mouseY = 0;
+
+let ballX = 0;
+let ballY = 0;
+
+let speed = 0.2;  //how fast ball catches up to mouse pointer;
+
+function animate() {
+  let distX = mouseX - ballX;
+  let distY = mouseY - ballY;
+      
+  ballX = ballX + (distX * speed);
+  ballY = ballY + (distY * speed);
+  
+  bob.style.left = ballX + 'px';
+  bob.style.top = ballY + 'px';
+
+  requestAnimationFrame(animate)
+
+};
+
+animate();
+ 
+document.addEventListener('mousemove',function(e){
+ mouseX = e.pageX;
+ mouseY = e.pageY;
+});
+
+document.addEventListener('click',function(e){
+ e.preventDefault;
+  bob.classList.remove('active');
+  //some rando comment
+  
+  void bob.offsetWidth;
+  
+  bob.classList.add('active');
+  
+},false);
+ 
+
+</script>
+
+
+
+
    <!-- Modal -->
    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -204,14 +258,18 @@
             </div>
          </div>
       </section>
+
+
       <section class="showcase">
          <div class="p-0">
          <div class="heading-for-main second-header container">
-            <h2 class="main-line-main ">We craft designs <br>with love</h2>
+            <h2 class="main-line-main" data-aos="zoom-out-down">We craft designs <br>with love</h2>
             <h4 class="orange-caption">yes,really!!</h4>
          </div>
          <div class="row g-0 first-main">
-            <div class="col-lg-6 order-lg-2 showcase-img-body"><img class="new-main-images" src="assets/img/main1.jpg"></div>
+            <div class="col-lg-6 order-lg-2 showcase-img-body" style="background-image: url(assets/img/main1.jpg);">
+             
+            </div>
             <div class="col-lg-6 order-lg-1 main-text">
                <div class="fr-desktop">
                   <h3 class="ftext">Graceful</h3>
@@ -224,7 +282,7 @@
             </div>
          </div>
          <div class="row g-0 second-main">
-            <div class="col-lg-6 order-lg-2 showcase-img-body"><img class="new-main-images" src="assets/img/main2.jpg"></div>
+            <div class="col-lg-6 order-lg-2 showcase-img-body" style="background-image: url(assets/img/main2.jpg);"></div>
             <div class="col-lg-6 order-lg-1 main-text">
                <div class="fr-desktop">
                   <h3 class="ftext">Flawless</h3>
@@ -237,7 +295,7 @@
             </div>
          </div>
          <div class="row g-0 third-main">
-            <div class="col-lg-6 order-lg-2 showcase-img-body"><img class="new-main-images" src="assets/img/main3.jpg"></div>
+            <div class="col-lg-6 order-lg-2 showcase-img-body" style="background-image: url(assets/img/main3.jpg);"></div>
             <div class="col-lg-6 order-lg-1 main-text">
                <div class="fr-desktop">
                   <h3 class="ftext">travel safe</h3>
@@ -250,7 +308,7 @@
             </div>
          </div>
          <div class="row g-0 fourth-main">
-            <div class="col-lg-6 order-lg-2 showcase-img-body"><a href="../casestudy.html"><img class="new-main-images" src="assets/img/main4.jpg"></a></div>
+           <div class="col-lg-6 order-lg-2 showcase-img-body" style="background-image: url(assets/img/main4.jpg);"><a href="../casestudy.html"></a></div>
             <div class="col-lg-6 order-lg-1 main-text">
                <div class="fr-desktop">
                   <h3 class="ftext">Catch Bus</h3>
@@ -263,7 +321,7 @@
             </div>
          </div>
          <div class="row g-0 fifth-main">
-         <div class="col-lg-6 order-lg-2 showcase-img-body"><img class="new-main-images" src="assets/img/main5.jpg"></div>
+         <div class="col-lg-6 order-lg-2 showcase-img-body" style="background-image: url(assets/img/main5.jpg);"></div>
          <div class="col-lg-6 order-lg-1 main-text">
             <div class="fr-desktop">
                <h3 class="ftext">Expenso</h3>
@@ -428,15 +486,24 @@
 
 
 
+<script>
+  $(function() {
+  AOS.init();
+});
+    </script>
 
 
 
+
+    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
       <!-- Bootstrap core JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Core theme JS-->
       <script type="text/javascript" src="js/slick.js"></script>
       <script src="js/scripts.js"></script>
+      <script src="js/aos.js"></script>
       <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
       <!-- * *                               SB Forms JS                               * *-->
       <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
