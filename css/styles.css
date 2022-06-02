@@ -12769,5 +12769,17 @@ a.buttonbanner {
 }
 
 
+@media only screen and (max-width: 740px) {
+
+.image-desk {
+
+  display: none;
+}
+
+}
+
+
+
+
 
 
