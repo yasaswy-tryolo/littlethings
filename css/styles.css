@@ -12771,9 +12771,8 @@ a.buttonbanner {
 
 @media only screen and (max-width: 740px) {
 
-.image-desk {
-
-  display: none;
+section.showcase.image-desk {
+    display: none;
 }
 
   .cursor-dot {
