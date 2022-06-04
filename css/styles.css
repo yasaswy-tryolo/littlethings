@@ -11330,10 +11330,10 @@ footer.footer {
     padding-right: 4rem;
   }
   .col-lg-6.order-lg-2.showcase-img-body {
-    width: 65%;
+    width: 65% !important;
   }
   .col-lg-6.order-lg-1.main-text {
-    width: 35%;
+    width: 35% !important;
   }
   .row.g-0.first-main {
     background: linear-gradient(180deg, rgba(251,211,211,0.036852240896358524) 0%, rgba(251,211,211,0.14049369747899154) 19%, rgba(251,211,211,0.18) 64%, rgba(204,229,164,0.14609593837535018) 100%);;
