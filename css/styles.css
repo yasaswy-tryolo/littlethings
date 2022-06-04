@@ -12760,11 +12760,10 @@ a.buttonbanner {
     opacity: 1;
   }
 }
-
 .col-lg-6.order-lg-2.showcase-img-body {
-    background-position: right;
+    background-position: 90%;
     background-repeat: no-repeat;
-    background-size: inherit;
+    background-size: 55%;
     background-attachment: fixed;
 }
 
