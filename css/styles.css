@@ -12776,7 +12776,7 @@ section.showcase.image-mob {
 }
 
 
-@media only screen and (min-width: 740px) {
+@media only screen and (max-width: 740px) {
 section.showcase.image-desk {
     display: none;
 }
